@@ -23,11 +23,23 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+A: hash function is a function where the input is any data, and the output is a number.
+
 2. Collision resolution
+A: When two items hash to the same slot, we must have a systematic method for placing the second item in the hash table. This process is  called collision resolution. 
+This collision resolution process is referred to as open addressing in that it tries to find the next open slot or address in the hash table.
+
 3. Performance of basic hash table operations
+Since there is always the initial (constant) cost of hashing, the cost of hash table operations with a good hash function is, on average, O(1 + α). If we can ensure that the load factor α never exceeds some fixed value αmax, then all operations will be O(1 + αmax) = O(1).
+
 4. Load factor
+A: The load factor of a hash table is trivial to calculate. You take the number of items stored in the hash table divided by the number  of slots.
+
 5. Automatic resizing
+
 6. Various use cases for hash tables
+A: Search for elements within a large data set. Find duplicate elements in a data set.
+   Quickly store and retrieve elements from a large data set.
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
